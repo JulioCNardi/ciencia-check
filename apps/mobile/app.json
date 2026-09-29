@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Ciencia Check",
+    "slug": "ciencia-check",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "cienciacheck",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0B3D2E"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "br.edu.apex.cienciacheck"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B3D2E"
+      },
+      "package": "br.edu.apex.cienciacheck"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "apiUrl": "http://localhost:3001"
+    }
+  }
+}
