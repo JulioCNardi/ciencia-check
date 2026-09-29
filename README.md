@@ -51,30 +51,23 @@ copy apps\api\.env.example apps\api\.env
 
 O seed cria o database `ciencia_check` (se não existir), as tabelas e a turma **DEMO2026**.
 
-## Como rodar
+## Como rodar (Windows — clique e execute)
 
-Na raiz do repositório:
+1. **Primeira vez:** duplo clique em `SETUP.bat` (instala deps, cria `.env`, faz seed).
+2. **Todo dia:** duplo clique em `INICIAR.bat` (abre API + Expo em duas janelas).
+
+MySQL precisa estar ligado (XAMPP/WAMP ou `docker compose up -d`).
+
+### Ou via terminal
 
 ```bash
 npm install
 npm run seed
+npm run api      # terminal 1 → http://localhost:3001
+npm run mobile  # terminal 2 → Expo Go / web
 ```
 
-Terminal 1 — API:
-
-```bash
-npm run api
-```
-
-API em [http://localhost:3001](http://localhost:3001).
-
-Terminal 2 — app:
-
-```bash
-npm run mobile
-```
-
-Abra no Expo Go (mesmo Wi‑Fi) ou emulador. No emulador Android, a API usa `10.0.2.2:3001` automaticamente.
+Abra no Expo Go (mesmo Wi‑Fi) ou emulador. No emulador Android, a API usa `10.0.2.2:3001` automaticamente; no celular físico, o app usa o IP do PC na rede.
 
 ### Turma demo
 
